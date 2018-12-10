@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Page</title>
+      <link rel="stylesheet" href="css/design.css">
+       <link rel="icon" type="image/png" href="Images/favicon.ico">
+ </head>
+
+
+
+
+
+
+<body>
+   
+<div class="main">
+        
+    <img src="images/logo.png" alt="our Logo">
+     <p> Only for Students of our Institute</p>
+
+<form method="post" action="">
+<fieldset>
+  <legend>Registeration Form</legend>
+   
+   
+    <label> <input class="name" type="text" name="fname" required="required" placeholder="First Name" onFocus="this.style.backgroundColor='#efc8bc';" onBlur="this.style.backgroundColor='white';"> 
+   <input class="name" type="text"  name="lname" required="required" placeholder="Last Name" onFocus="this.style.backgroundColor='#efc8bc';" onBlur="this.style.backgroundColor='white';"> </label> <br>
+   <input class="form" type="text" name="id" required="required" placeholder="Username" onFocus="this.style.backgroundColor='#efc8bc';" onBlur="this.style.backgroundColor='white';"> <br>
+   <input  class="form" type="password"  name="pass" required="required" placeholder="Password" onFocus="this.style.backgroundColor='#efc8bc';" onBlur="this.style.backgroundColor='white';"><br>
+   <input  class="form" type="password"  name="pass" required="required" placeholder="Confirm Password" onFocus="this.style.backgroundColor='#efc8bc';" onBlur="this.style.backgroundColor='white';"><br> 
+    <input class="form" id="email" type="email" name="aid" required="required" placeholder="Email" onClick="checkAddress('email')" onFocus="this.style.backgroundColor='#efc8bc';" onBlur="this.style.backgroundColor='white';"> <br>
+   <label>Birth Date: <br> <input type="date"> </label> <br> <br>
+  
+    <input class="button" type="button" value="Submit" onclick="window.location.href='index.html'">
+ 
+
+
+</fieldset>
+<br> <br>
+ <p>By signing up,you agree to our <br><a href"#">terms of use</a><a href"#">privacy policy</a>and<a href"#">cookie policy</a></p>
+ 
+ <p>Already a member? <a href="login.html" class="highlight"> Log in </a> to your account.</p>
+
+
+</form>
+</div>
+
+
+<footer>    
+  <img src="images/logo.png" alt=" logo" height="60px" width="80px"> <a href="index.html"> Active Life Style </a>
+  <hr> All Rights reserved &copy; 2016 <a href"#">About </a><a href"#">Press</a><a href"#">Copyright</a> 
+  <a href"#"> Creators</a> <a href"#">Advertise</a> <a href"#"> Developers </a> <a href"#">+ActiveLifeStyle </a> <br>
+<a href"#">Terms </a> <a href"#">Privacy Policy &amp; Safety</a> <a href"#">Send feedback</a> 
+</footer>
+
+<script>
+function checkAddress(fieldId) {
+var val = document.getElementById(fieldId).value;
+ if (val === "") {
+ alert("Email address required.");
+}
+ }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?php
+require 'connection.php';
+$conn = Connect();
+$fname = $conn->real_escape_string($_POST['fname']);
+$lname = $conn->real_escape_string($_POST['lname']);
+$username = $conn->real_escape_string($_POST['id']);
+$pass1 = $conn->real_escape_string($_POST['pass']);
+$pass2 = $conn->real_escape_string($_POST['pass2']);
+$email = $conn->real_escape_string($_POST['aid']);
+$birth = $conn->real_escape_string($_POST['bdate']);
+
+$query   = "INSERT into users (First_Name,Last_Name,Username,Password,Confirm_Password,Email,Birth_Date) VALUES('" . $fname . "','" . $lname . "','" . $username . "','" . $pass1 . "','" . $pass2 . "','" . $email . "','" . $birth . "')";
+$success = $conn->query($query);
+ 
+if (!$success) {
+    die("Couldn't enter data: ".$conn->error);
+ 
+}
+ 
+echo "Thank You For Contacting Us <br>";
+ 
+$conn->close();
+?>

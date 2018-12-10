@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Active Life Style</title>
+    <link rel="stylesheet" href="CSS/design.css" type="text/css">
+     <link rel="icon" type="image/png" href="Images/favicon.ico">
+
+  <style>
+       .widthHeight {
+       width: 100%;
+       height: 410px;
+       
+        
+            
+        }
+        
+        .hide {
+            display: none;
+        }
+        
+        .show {
+            display: block;
+        }
+        .slider{
+             width:100%;
+             height:490px;
+              
+              
+        }
+       
+        .slider>ul>li{
+          
+            text-align: center;
+            margin-right:40px; 
+        }
+    </style>
+
+
+</head>
+<body>
+     <script>
+    var totalSlides = 7;
+    var currentSlide = 0;
+    function Next() {
+        if (currentSlide == totalSlides) currentSlide = 0;
+        for (var i = 0; i < totalSlides; i++) {
+            if (i == currentSlide) document.getElementById(i).className = "show";
+            else document.getElementById(i).className = "hide";
+        }
+        currentSlide++;
+    }
+    
+    setInterval(function () {
+        Next();
+    }, 3000)
+
+</script>
+    <nav>
+       
+       <ul>
+        <div class="leftie">  <li id="logoo"> <a class="logo" href="index.html"> <img class="logo" src="images/sitelogo.png" alt="logo" width="220px" 
+        height="60px" ></a> </li> </div> 
+          
+         
+           
+    
+
+
+
+      <li>
+<div class="dropdown">
+  <button class="dropbtn">Yoga Life</button>
+  <div class="dropdown-content">
+    <a href="yogalife.html">Yoga</a>
+    <a href="yogalife.html">Mudras</a>
+ 
+  </div>
+</div>
+</li>
+
+
+
+      <li>
+<div class="dropdown">
+  <button class="dropbtn">Yoga Poses</button>
+  <div class="dropdown-content">
+    <a href="yogaposes.html">Beginners</a>
+    <a href="yogaposes.html">Advanced</a>
+    <a href="yogaposes.html">Advanced ++</a>
+  </div>
+</div>
+</li>
+
+
+      <li><div class="dropdown">
+  <button class="dropbtn">Yoga Kitchen</button>
+  <div class="dropdown-content">
+    <a href="yogakitchen.html">Gain Weight </a>
+    <a href="yogakitchen.html">Loose Weight</a>
+    <a href="yogakitchen.html">Food Treasure</a>
+  </div>
+</div>
+     </li>
+       
+      <li><div class="dropdown">
+  <button class="dropbtn">Join Us</button>
+  <div class="dropdown-content">
+    <a href="login.html">Log in</a>
+    <a href="register.html">Register Now</a>
+    
+  </div>
+</div>
+      </li>
+
+      </ul>
+  </nav>
+
+
+
+
+
+
+
+  <div class="slider">
+        <ul class="images">    
+            <li id="0"><img src="Images/slide1.jpg" class="widthHeight" /></li>
+            <li id="1"><img src="Images/slide2.jpg" class="widthHeight" /></li>
+            <li id="2"><img src="Images/slide4.jpg" class="widthHeight" /></li>
+            <li id="3"><img src="Images/slide5.jpg" class="widthHeight" /></li>
+            <li id="4"><img src="Images/slide6.jpg" class="widthHeight" /></li>
+            <li id="5"><img src="Images/slide7.jpg" class="widthHeight" /></li>
+            <li id="6"><img src="Images/slide8.jpg" class="widthHeight" /></li>
+        </ul>
+</div>
+<div class="parent">
+  <div class="child">
+<h1> LIFE JUST GOT BETTER </h1> 
+<p> 
+WE’RE HERE TO LISTEN, UNDERSTAND AND DELIVER ON THE PROMISES WE MAKE. OUR STUDENTS ARE AT THE HEART OF EVERYTHING WE DO. </p>
+
+
+</div>
+<div class="child">
+<h1>WHAT WE DO?</h1>
+<p style="color:red"> WE MAKE THINGS HAPPEN..</p>
+<p>WE BELIEVE IN TRIANGLE OF LIFE </p>
+  <img src="images/yogatriangle.jpg" alt="life">
+  <p>
+    YOU CAN MASTER THE ART OF YOGA BY CONTROLLING YOUR MIND ,BODY AND SPIRIT AND BALANCE THEM.
+    </p></div>
+    <div class="child">
+    
+<h1>IT’S NOT ABOUT US, ITS ABOUT YOU.</h1>
+<p>
+  OUR TEAM WILL BE FOCUSSED, DETERMINED AND CREATIVE TO MAKE YOUR GOALS  A SUCCESS.
+ NO MATTER HOW SIMPLE OR DIFFICULT THE TASK, WE MAKE THINGS HAPPEN..
+</p>
+</div>
+
+</div>
+
+
+<footer>    
+  <img src="images/logo.png" alt=" logo" height="60px" width="80px"> <a href="index.html"> Active Life Style </a>
+  <hr> All Rights reserved &copy; 2016 <a href"#">About </a><a href"#">Press</a><a href"#">Copyright</a> 
+  <a href"#"> Creators</a> <a href"#">Advertise</a> <a href"#"> Developers </a> <a href"#">+ActiveLifeStyle </a> <br>
+<a href"#">Terms </a> <a href"#">Privacy Policy &amp; Safety</a> <a href"#">Send feedback</a> 
+</footer>
+ 
+</body>
+</html>
